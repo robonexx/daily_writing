@@ -1,0 +1,61 @@
+.article {
+  width: 400px;
+  margin: 0.25rem;
+  display: flex;
+  flex-direction: column;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.articleImg {
+  width: 360px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.articleInfo {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.postCategory {
+  a {
+    color: #f4f4f8;
+    padding: 0.2rem;
+    cursor: pointer;
+    margin-left: 0.25rem;
+    line-height: 15px;
+  }
+}
+
+.articleTitle {
+  a {
+    font-size: 1.4rem;
+    margin-left: 0.5rem;
+    color: #c66b3d;
+  }
+}
+
+.articleDate {
+  margin-left: 75%;
+  color: rgba(243, 145, 53, 0.575);
+  font-size: 0.8rem;
+  width: 100%;
+}
+
+.articleText {
+  width: 100%;
+  color: #e5e5dc;
+  margin: 0.2rem 0.25rem;
+  font-weight: 400;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}

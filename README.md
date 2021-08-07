@@ -1,3 +1,10 @@
+# Rehearsing and continue to practice React, scss and loading to a server eventually
+
+Started this project some time mid july and decided to continue on it and load it up to my git
+Learning as I go
+
+My sources has been Net ninjas React tutorial and Traversy's React course on Udemy + stack, stack and stack again :D
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

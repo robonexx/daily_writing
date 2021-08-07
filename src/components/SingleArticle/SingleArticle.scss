@@ -1,0 +1,85 @@
+.singleArticle {
+  position: relative;
+  background: #26495c;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Wrapper {
+  background: chocolate;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 3rem;
+  align-items: center;
+}
+
+.singleArticleImage {
+  width: 500px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.singleArticleTitleBox {
+  margin: 1rem 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.singleArticleTitle {
+  letter-spacing: 5px;
+}
+
+.singleArticle .icon {
+  margin: 0 0.25rem;
+  width: 32px;
+  height: 32px;
+  padding: 0.1rem;
+  cursor: pointer;
+
+  @media (max-width: 768px) {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.singleArticle .editBtn {
+  color: lightblue;
+}
+
+.singleArticle .deleteBtn {
+  color: orangered;
+}
+
+.singleArticle .icon:hover {
+  color: rgb(207, 207, 207);
+}
+
+.singleArticleInfo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 2rem;
+}
+
+.singleArticleText {
+  padding: 2rem;
+  color: #f4f4f8;
+  line-height: 22px;
+}
+
+.singleArticleText::first-letter {
+  margin-left: 16px;
+  font-size: 30px;
+  min-width: none;
+}
