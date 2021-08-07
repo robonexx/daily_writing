@@ -1,0 +1,101 @@
+.settings {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  background: #26495c;
+}
+
+.settingsTitle {
+  padding: 2rem 5rem;
+}
+
+.settingsUpdate,
+.settingsDelete {
+  margin: 4rem 0.5rem;
+  outline: none;
+  border: none;
+  background: #26495c;
+  color: #e5e5dc;
+  padding: 4px 8px;
+  filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.7));
+  border-radius: 5px;
+}
+
+.settingsWrapper {
+  position: absolute;
+  left: 50%;
+  top: 10%;
+  transform: translate(-50%);
+  width: 80%;
+  height: 80%;
+  background: #e5e5dc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.settingsProfilePic {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+.settingsImg {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.6));
+}
+.settingsProfilePicIcon {
+  width: 64px;
+  height: 64px;
+  filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.6));
+  padding: 0;
+  margin: 0;
+}
+
+.settingsForm {
+  width: 100%;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.settingInputs {
+  width: 50%;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+label {
+  font-size: 1.2rem;
+  margin-left: 0;
+  font-weight: 600;
+}
+input {
+  margin-right: 0;
+  outline: none;
+  border: none;
+  padding: 0.25rem;
+  border-radius: 5px;
+  background: #26495c;
+  color: #e5e5dc;
+  filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.7));
+}
+
+.settingsBtn {
+  margin-top: 1rem;
+  outline: none;
+  border: none;
+  font-size: 1.2rem;
+  background: #26495c;
+  color: #e5e5dc;
+  padding: 4px 8px;
+  filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.7));
+  border-radius: 5px;
+}

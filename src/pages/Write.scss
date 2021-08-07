@@ -21,7 +21,9 @@
 }
 .writeImg {
   width: 40vw;
+  object-fit: cover;
   padding: 0.5rem;
+  border-radius: 20px;
 }
 
 .Form {
@@ -70,7 +72,7 @@
 .writeInput {
   margin: 0.25rem;
   width: 100%;
-  min-height: 400px;
+  min-height: 300px;
   max-height: 100%;
   outline: none;
 }
