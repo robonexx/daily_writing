@@ -11,6 +11,9 @@ import SignUp from './pages/SignUp'
 
 
 function App() {
+
+  const user = false; /* set true to be able to write article and if false you will be directed to sign up or login */
+
   return (
 
     <Router>
@@ -24,16 +27,16 @@ function App() {
             <About />
           </Route>
           <Route path="/write">
-           <Write />
+            {user ? <Write /> : <SignUp/>}
           </Route>
           <Route path="/login">
-            <Login />
+          {user ? <Home /> : <Login />}
           </Route>
           <Route path="/signup">
-          <SignUp />
+            {user ? <Home /> : <SignUp />}
           </Route>
           <Route path="/settings">
-          <Settings />
+            {user ? <Settings /> : <SignUp/>}
           </Route>
           <Route path="/article/:articleId">
             <ShowArticle />

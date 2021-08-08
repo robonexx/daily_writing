@@ -96,15 +96,26 @@
   cursor: pointer;
 }
 
+/* login sign up navbar top /or/  img */
+.navbar .listItems {
+  font-size: 0.8rem;
+  background: #c66b3d;
+  padding: 2px 4px;
+  border-radius: 2px;
+  filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.7));
+}
+
 .navbar ul {
-  /* display the unordered list in a single row, placing the elements at the end of the grid column */
+  
   display: flex;
   justify-content: flex-end;
   list-style: none;
 }
 
+
+
 .navbar ul li {
-  /* separate the list items more prominently */
+
   margin: 0 1rem;
   font-size: 1rem;
   text-transform: uppercase;
@@ -117,13 +128,13 @@
 }
 
 .navbar ul li a {
-  /* reset the anchor link styles */
+  
   color: #e5e5dc;
   text-decoration: none;
   padding: 0 0.25rem;
   letter-spacing: 0.2rem;
   font-weight: 500;
-  /* position relative to absolute position the connected pseudo element */
+  
   position: relative;
   cursor: pointer;
 }
@@ -136,7 +147,7 @@
   bottom: 0;
   left: 100%;
   right: 100%;
-  /* transition for the hover state */
+  /* transition for hover state */
   transition: all 0.3s ease-out;
 }
 

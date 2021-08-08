@@ -1,4 +1,5 @@
 import './Settings.scss'
+import {Link} from 'react-router-dom'
 import profImg from '../assets/images/ruperto.jpg'
 import styled from 'styled-components'
 import {User} from '@styled-icons/evil/User'
@@ -44,8 +45,9 @@ const Settings = () => {
                 <input type="password" placeholder="**********"></input>
                 </div>
                 
-
-                   <button className="settingsBtn">Done</button>
+                <Link to="/">
+                        <button className="settingsBtn">Done</button>
+                </Link>
                 </form>
                 
             </div>

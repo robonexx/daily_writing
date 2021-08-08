@@ -5,6 +5,21 @@
   background: #26495c;
 }
 
+.settingsWrapper {
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translate(-50%);
+  width: 50%;
+  height: 40%;
+  background: #e5e5dc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
 .settingsTitle {
   padding: 2rem 5rem;
 }
@@ -21,19 +36,6 @@
   border-radius: 5px;
 }
 
-.settingsWrapper {
-  position: absolute;
-  left: 50%;
-  top: 10%;
-  transform: translate(-50%);
-  width: 80%;
-  height: 80%;
-  background: #e5e5dc;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
 
 .settingsProfilePic {
   width: 100%;
