@@ -12,7 +12,7 @@ import SignUp from './pages/SignUp'
 
 function App() {
 
-  const user = false; /* set true to be able to write article and if false you will be directed to sign up or login */
+  const user = true; /* set true to be able to write article and if false you will be directed to sign up or login */
 
   return (
 

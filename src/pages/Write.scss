@@ -64,18 +64,22 @@
 }
 
 .writeTitle {
-  margin: 0.25rem;
+  font-weight: 600;
   width: 60%;
-  font-weight: 400;
   outline: none;
+  background: #e5e5dc;
+  color: #000;
 }
 
 .writeInput {
+  font-weight: 600;
   margin: 0.25rem;
   width: 100%;
   min-height: 300px;
   max-height: 100%;
   outline: none;
+  background: #e5e5dc;
+  color: #000;
 }
 
 .writeBtn {
