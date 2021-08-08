@@ -1,9 +1,16 @@
-# Rehearsing and continue to practice React, scss and loading to a server eventually
+# Rehearsing and continue to practice React, scss and connection to a server eventually or using fake api with local server
 
-Started this project some time mid july and decided to continue on it and load it up to my git
-Learning as I go
+So the idea with this project # Daily Writings
+is just to create a blog kind of page while practicing react and sass. 
 
-My sources has been Net ninjas React tutorial and Traversy's React course on Udemy + stack, stack and stack again :D
+Goal is to create a log in function, also to be able to upload the articles to a server
+I have no goal when to be finnsihed as I study at the same time and do other projects 
+
+For this project my sources has been Net ninjas React tutorial on youtube and Traversy's React course on Udemy, also started Maximilians react course but it was 
+redone when i got back so havent restarted it. 
+and our teacher at KYH Kristian + stack, stack and stack again :D
+
+
 
 # Getting Started with Create React App
 
