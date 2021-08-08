@@ -7,6 +7,7 @@ import ArticlesPage from './pages/ArticlesPage'
 import Write from './pages/Write'
 import Settings from './pages/Settings';
 import Login from './pages/Login'
+import SignUp from './pages/SignUp'
 
 
 function App() {
@@ -26,7 +27,7 @@ function App() {
            <Write />
           </Route>
           <Route path="/login">
-            <h1>Login</h1>
+            <Login />
           </Route>
           <Route path="/articlespage">
             <ArticlesPage />
@@ -34,8 +35,8 @@ function App() {
           <Route path="/settings">
           <Settings />
           </Route>
-          <Route path="/Login">
-          <Login />
+          <Route path="/signup">
+          <SignUp />
           </Route>
    
         </Switch>

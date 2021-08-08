@@ -1,4 +1,4 @@
-.login {
+.signUp {
     width: 100vw;
     height: 100vh;
     background: #e5e5dc;
@@ -9,10 +9,10 @@
     overflow: hidden;
 }
 
-.loginForm {
+.signUpForm {
     width: 300px;
     height: 450px;
-    background: #c66b3d;
+    background: #26495c;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -23,34 +23,35 @@
     
 }
 
-.loginForm > h1 {
+.signUpForm > h1 {
     color: #e5e5dc;
     filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.7));
     margin-bottom: 2rem;
 }
 
-.loginForm > label {
+.signUpForm > label {
     width: 80%;
     color: #e5e5dc;
 }
 
-.loginForm > input {
+.signUpForm > input {
     width: 80%;
     background-color: #e5e5dc;
     color: #000;
     font-size: 22px;
     font-weight: 600;
     }
-.loginForm > input::placeholder {
+
+.signUpForm > input::placeholder {
         font-weight: 500;
 }
 
-.loginBtn {
+.signUpBtn {
         margin-top: 1rem;
         outline: none;
         border: none;
         font-size: 1.2rem;
-        background: #26495c;
+        background: #c66b3d;
         color: #e5e5dc;
         padding: 4px 8px;
         filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.7));
@@ -63,10 +64,10 @@
         }
       }
 
-      .login > h2 {
+      .signUp > h2 {
           margin-top: 2rem;
       }
-.signupBtn {
+.backBtn {
         margin-top: 2rem;
         outline: none;
         border: none;
@@ -78,7 +79,7 @@
         border-radius: 5px;
 
         &:hover {
-            background: #bbf3af;
+            background: #e5e5e5;
             color: #242424;
             font-weight: 600;
         }
