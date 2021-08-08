@@ -12,19 +12,19 @@ const Article = ({img}) => {
             src={img}
             alt="" />
             <div className="articleInfo">
-                <span className="postCategory">
-                <Link className="link" to="/posts?cat=Dance">
+                <span className="articleCat">
+                <Link className="link" to="/articles?cat=Dance">
               Dance
             </Link>
                 </span>
-                <span className="postCategory">
-                <Link className="link" to="/posts?cat=Life">
+                <span className="articleCat">
+                <Link className="link" to="/articles?cat=Life">
               Life
             </Link>
                     </span>
             </div>
             <div className="articleTitle">
-            <Link to="/post/abc" className="link">
+            <Link to="/article/abc" className="link">
             Dance is Life
           </Link></div>
             <span className="articleDate">1 hour ago</span>

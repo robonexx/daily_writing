@@ -2,6 +2,7 @@ import './SingleArticle.scss'
 import {EditAlt} from '@styled-icons/boxicons-regular/EditAlt'
 import {Delete} from '@styled-icons/fluentui-system-regular/Delete'
 import styled from 'styled-components'
+import {Link} from 'react-router-dom'
 
 const EditIcon = styled(EditAlt)` 
 `
@@ -29,7 +30,9 @@ const SingleArticle = () => {
                 </div>
                 <div className="singleArticleInfo">
                     <span className="author">
-                        Author: <b>{AuthorName}</b>
+                        <Link className="link" to="/articles?username=Rob">
+                            Author: <b>{AuthorName}</b>
+                        </Link>
                     </span>
                     <span className="singleArticleDate">
                         posted: <b>{dateAndTime}</b>

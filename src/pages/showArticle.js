@@ -1,9 +1,9 @@
-import './ArticlesPage.scss'
+import './showArticle.scss'
 import SingleArticle from '../components/SingleArticle/SingleArticle';
 import {Link} from 'react-router-dom'
 
 
-const ArticlesPage = ({img}) => {
+const ShowArticle = ({img}) => {
     return ( 
         <div className="articlespage">
             <SingleArticle />
@@ -11,5 +11,5 @@ const ArticlesPage = ({img}) => {
      );
 }
  
-export default ArticlesPage;
+export default ShowArticle;
 

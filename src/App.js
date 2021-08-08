@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Switch, Route, } from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar'
 import Home from './pages/Home'
 import About from './pages/About'
-import ArticlesPage from './pages/ArticlesPage'
+import ShowArticle from './pages/showArticle'
 import Write from './pages/Write'
 import Settings from './pages/Settings';
 import Login from './pages/Login'
@@ -29,14 +29,14 @@ function App() {
           <Route path="/login">
             <Login />
           </Route>
-          <Route path="/articlespage">
-            <ArticlesPage />
+          <Route path="/signup">
+          <SignUp />
           </Route>
           <Route path="/settings">
           <Settings />
           </Route>
-          <Route path="/signup">
-          <SignUp />
+          <Route path="/article/:articleId">
+            <ShowArticle />
           </Route>
    
         </Switch>
