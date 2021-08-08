@@ -25,6 +25,7 @@ export default function Navbar() {
 
   /* Profile img i show if user sign in is true if not signed in will show two buttons for either login or sign up */
   const user = true;
+  
     return (
         <div className="navbar">
             <div className="navL">
