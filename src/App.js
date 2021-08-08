@@ -6,6 +6,7 @@ import About from './pages/About'
 import ArticlesPage from './pages/ArticlesPage'
 import Write from './pages/Write'
 import Settings from './pages/Settings';
+import Login from './pages/Login'
 
 
 function App() {
@@ -32,6 +33,9 @@ function App() {
           </Route>
           <Route path="/settings">
           <Settings />
+          </Route>
+          <Route path="/Login">
+          <Login />
           </Route>
    
         </Switch>
