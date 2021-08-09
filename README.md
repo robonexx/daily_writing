@@ -1,4 +1,4 @@
-# Rehearsing and continue to practice React, scss and connection to a server eventually or using fake api with local server
+# Rehearsing and continue to practice React, scss and connection to a server eventually or using fake json db with localhost server
 
 So the idea with this project # Daily Writings
 is just to create a blog kind of page while practicing react and sass. 
