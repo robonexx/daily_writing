@@ -28,14 +28,8 @@ export default function Navbar() {
   
     return (
         <div className="navbar">
-            <div className="navL">
-                <InstaIcon className="icon"/>
-                <FbIcon className="icon"/>
-                <InIcon className="icon"/>
-        </div>
-        
-        <div className="navCL">
-          {
+        <div className="navL">
+        {
             user ? (
                 <img className="profileImg"
                 src={UserImage}
@@ -51,7 +45,13 @@ export default function Navbar() {
                 </ul>
             )
           } 
-                <SearchIcon className="searchIcon"/>
+               <SearchIcon className="searchIcon"/>
+        </div>
+        
+        <div className="navCL">
+                <InstaIcon className="icon"/>
+                <FbIcon className="icon"/>
+                <InIcon className="icon"/>
             </div>
             <div className="navCR">Daily Writings</div>
             <div className="navR">
