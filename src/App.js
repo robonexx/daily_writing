@@ -49,3 +49,9 @@ function App() {
 }
 
 export default App;
+
+// decided to do an fake json db and store the articles there
+
+
+// to run db.json
+// npx json-server --watch data/db.json --port 8000

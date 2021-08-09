@@ -1,0 +1,19 @@
+{
+    "blogs": [
+      {
+        "title": "Training all things React",
+        "body": "Practice til perfection",
+        "author": "Rob",
+        "id": 1
+      },
+      {
+        "title": "Trying to set up a server json db",
+        "body": "Dont really know how yet but I think I have and idea and a structure in my head. No just to figure out how to implement it to this project lorem dorem dipsy.. lorem20 ipust, the pispos noi bnioa sniob nao, bnioaj bov ij  oiåbjoiåahioåbjh oåb oiåeab iheio åbhioåerh bheir bhiåoer boihei bhioeh båoiheibhiåerh bioåher bher båoierh iboåherioåhbåioerboiåh erioåhb ierh biåherå ibhoiåerh bheroiå bhåiohe åibhåirehb iher biheroiåb åioer bohiå eroiåhb i",
+        "author": "Lorem lupsum",
+        "id": 2
+      }
+      
+    ]
+  }
+  
+  
