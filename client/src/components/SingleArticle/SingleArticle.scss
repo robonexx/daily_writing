@@ -2,7 +2,7 @@
   position: relative;
   background: var(--color-bg-dark);
   width: 100%;
-  height: 100%;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -11,18 +11,28 @@
 
 .Wrapper {
   background: var(--color-bg);
-  width: 80%;
+  width: 50%;
   display: flex;
   flex-direction: column;
   padding: 2rem 3rem;
   align-items: center;
+  @media(max-width: 960px) {
+    width: 80%;
+  }
+  @media(max-width: 40em) {
+    width: 95%;
+  }
 }
 
 .singleArticleImage {
-  width: 500px;
-  height: 280px;
+  width: 100%;
+  height: 260px;
   object-fit: cover;
   border-radius: 10px;
+
+  @media (max-width: 40em) {
+    height: 180px;
+  }
 }
 
 .singleArticleTitleBox {
@@ -38,6 +48,14 @@
 .singleArticleTitle {
   letter-spacing: 5px;
   color: var(--color-primary);
+}
+.singleArticleTitleInput {
+  margin: 1rem 0;
+  width: 60%;
+  padding: 0 2rem;
+  outline: none;
+  background: lightgray;
+  color: var(--color-primary-dark);
 }
 
 .singleArticle .icon {
@@ -98,9 +116,38 @@
   line-height: 22px;
 }
 
+.singleArticleTextInput {
+  margin: 1rem 0;
+  width: 80%;
+  padding: 0 2rem;
+  outline: none;
+  background: lightgray;
+  color: var(--color-primary-dark);
+}
+
 .singleArticleText::first-letter {
   margin-left: 16px;
   font-size: 30px;
   min-width: none;
   text-transform: uppercase;
+}
+
+.updateBtn {
+  margin-top: 1rem;
+  outline: none;
+  border: none;
+  font-size: 1.2rem;
+  background: var(--color-bg-dark);
+  color: var(--color-secondary);
+  padding: 4px 8px;
+  filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.7));
+  border-radius: 2px;
+  transition: all 0.4s ease;
+
+  &:hover {
+      background: var(--color-primary);
+      color: var(--color-bg);
+      font-weight: 600;
+      cursor: pointer;
+  }
 }

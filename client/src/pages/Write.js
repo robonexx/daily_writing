@@ -61,7 +61,7 @@ const Write = () => {
             />
             <input
               type='text'
-              placeholder='Write title'
+              placeholder='Title'
               className='writeTitle'
               onChange={(e) => setTitle(e.target.value)}
             />
@@ -70,7 +70,7 @@ const Write = () => {
             <textarea
               name='writeText'
               type='text'
-              placeholder='Write here...'
+              placeholder='Write your article here...'
               className='writeInput writeText'
               onChange={(e) => setDesc(e.target.value)}
             ></textarea>
