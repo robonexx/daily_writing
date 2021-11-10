@@ -1,6 +1,11 @@
-.articles {
+.articles-container {
   display: flex;
   flex-flow: row wrap;
   margin: 0.25rem;
   width: 100%;
+}
+
+.articles-container img {
+  width: 90%;
+  margin: 0.5rem 1rem;
 }

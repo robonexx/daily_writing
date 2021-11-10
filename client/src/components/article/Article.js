@@ -1,36 +1,35 @@
-import { Link } from 'react-router-dom'
-import './Article.scss'
-import PostImg from '../../assets/images/write.jpg'
+import { Link } from 'react-router-dom';
+import './Article.scss';
 
-const Article = ({img}) => {
 
-    return ( 
+const Article = ({ article }) => {
+  return (
+    <div className='article'>
+      {article.photo && (
+        <img className='articleImg' src='https://picsum.photos/200' alt='' />
+      )}
+      
+      <div className='articleInfo'>
+        {article.categories.map((cat) => (
+          <span className='articleCat'>
+            {cat.name}
+        </span>
+        ))}
+        
+      </div>
+      <div className='articleTitle'>
+        <Link to={`/article/${article._id}`} className='link'>
+          {article.title}
+        </Link>
+      </div>
+      <span className='articleDate'>
+        {new Date(article.createdAt).toDateString()}
+      </span>
+      <p className='articleText'>
+        {article.desc}
+      </p>
+    </div>
+  );
+};
 
-        <div className="article">
-            <img 
-            className="articleImg"
-            src={img}
-            alt="" />
-            <div className="articleInfo">
-                <span className="articleCat">
-                <Link className="link" to="/articles?cat=Dance">
-              Dance
-            </Link>
-                </span>
-                <span className="articleCat">
-                <Link className="link" to="/articles?cat=Life">
-              Life
-            </Link>
-                    </span>
-            </div>
-            <div className="articleTitle">
-            <Link to="/article/abc" className="link">
-            Dance is Life
-          </Link></div>
-            <span className="articleDate">1 hour ago</span>
-                <p className="articleText">lrenjanvg hpoigjinoåa oiåwgnåoiua wnågioa nåogiuwroiå goiåuareoiågu iånaiågun oiåauiågu niåauwniågu auiigu nioauwågio uåiauwåig niawrugni uåaiåugni oåuawrni giåuanåigu aniåug niåuåiru ginåuawriå ugn8awu guåaworigoiåuwaro ignoiåwruinoå gnoiawuåogi an2wgi aiwruågin ewroi</p>
-        </div>
-     );
-}
- 
 export default Article;

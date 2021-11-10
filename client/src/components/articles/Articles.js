@@ -1,15 +1,14 @@
 import './Articles.scss'
 import Article from '../article/Article'
-import articleImg from '../../assets/images/write.jpg'
 
-const Articles = () => {
+
+const Articles = ({articles}) => {
     return ( 
-        <div className="articles">
-            <Article img={articleImg}/>
-            <Article img={articleImg}/>
-            <Article img={articleImg}/>
-            <Article img={articleImg}/>
-            <Article img={articleImg}/>
+        <div className="articles-container">
+            {articles.map((art) => (
+                <Article article={art} key={art._id}/>
+            ))}
+            
         </div>
      );
 }

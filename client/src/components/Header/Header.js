@@ -6,8 +6,7 @@ const Header = () => {
     return ( 
         <div className="header">
             <div className="title">
-                <span className="titleTop">Your daily</span>
-                <span className="titleBottom">Articles</span>
+                <span>Life online</span>
             </div>
             <img
             className="headerImg"

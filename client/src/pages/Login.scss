@@ -32,17 +32,18 @@
 .loginForm > label {
     width: 80%;
     color: #e5e5dc;
+    font-weight: 100;
 }
 
 .loginForm > input {
     width: 80%;
     background-color: #e5e5dc;
     color: #000;
-    font-size: 22px;
+    font-size: 16px;
     font-weight: 600;
     }
 .loginForm > input::placeholder {
-        font-weight: 500;
+        font-weight: 400;
 }
 
 .loginBtn {
@@ -56,6 +57,11 @@
         filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.7));
         border-radius: 2px;
 
+        :disabled {
+            background: gray;
+            cursor: not-allowed;
+        }
+
         &:hover {
             background: #e5e5dc;
             color: #26495c;
@@ -64,10 +70,11 @@
       }
 
       .login > h2 {
-          margin-top: 2rem;
+          margin-top: 1rem;
+          font-weight: 400;
       }
-.signupBtn {
-        margin-top: 2rem;
+        .signupBtn {
+        margin-top: 1rem;
         outline: none;
         border: none;
         font-size: 1.2rem;

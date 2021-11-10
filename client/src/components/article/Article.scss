@@ -7,6 +7,7 @@
   a {
     text-decoration: none;
   }
+
 }
 
 .articleImg {
@@ -23,35 +24,37 @@
   width: 100%;
 }
 
-.postCategory {
+.articleCat {
   a {
-    color: #f4f4f8;
-    padding: 0.2rem;
+    text-decoration: none;
+    color: var(--color-info);
+    font-weight: 100;
     cursor: pointer;
-    margin-left: 0.25rem;
+    margin-left: 1rem;
     line-height: 15px;
   }
 }
 
 .articleTitle {
   a {
-    font-size: 1.4rem;
-    margin-left: 0.5rem;
-    color: #c66b3d;
+    font-size: 1.6rem;
+    margin-left: 1rem;
+    color: var(--color-primary);
   }
 }
 
 .articleDate {
-  margin-left: 75%;
-  color: rgba(243, 145, 53, 0.575);
+  color: var(--color-info);
+  margin-left: 1rem;
   font-size: 0.8rem;
   width: 100%;
+  font-weight: 100;
 }
 
 .articleText {
-  width: 100%;
+  width: 85%;
   color: #e5e5dc;
-  margin: 0.2rem 0.25rem;
+  margin: 0.2rem 1rem;
   font-weight: 400;
   overflow: hidden;
   text-overflow: ellipsis;

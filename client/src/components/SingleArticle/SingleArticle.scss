@@ -1,16 +1,16 @@
 .singleArticle {
   position: relative;
-  background: #26495c;
+  background: var(--color-bg-dark);
   width: 100%;
   height: 100%;
-  color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: 'Inter', sans-serif;
 }
 
 .Wrapper {
-  background: chocolate;
+  background: var(--color-bg);
   width: 80%;
   display: flex;
   flex-direction: column;
@@ -37,14 +37,16 @@
 
 .singleArticleTitle {
   letter-spacing: 5px;
+  color: var(--color-primary);
 }
 
 .singleArticle .icon {
   margin: 0 0.25rem;
   width: 32px;
   height: 32px;
-  padding: 0.1rem;
+  padding: 0.25rem;
   cursor: pointer;
+  border-radius: 3px;
 
   @media (max-width: 768px) {
     width: 24px;
@@ -53,11 +55,11 @@
 }
 
 .singleArticle .editBtn {
-  color: lightblue;
+  color: var(--color-primary);
 }
 
 .singleArticle .deleteBtn {
-  color: orangered;
+  color: tomato;
 }
 
 .singleArticle .icon:hover {
@@ -70,11 +72,29 @@
   justify-content: space-between;
   width: 100%;
   padding: 0 2rem;
+  font-weight: 400;
+  color: var(--color-info);
+
+.author a {
+  text-decoration: none;
+  color: var(--color-info);
+  font-weight: 100;
+
+  b {
+    font-weight: 400;
+  }
+}
+.singleArticleDate {
+  font-weight: 100;
+  b {
+    font-weight: 400;
+  }
+}
 }
 
 .singleArticleText {
   padding: 2rem;
-  color: #f4f4f8;
+  color: var(--color-primary);
   line-height: 22px;
 }
 
@@ -82,4 +102,5 @@
   margin-left: 16px;
   font-size: 30px;
   min-width: none;
+  text-transform: uppercase;
 }

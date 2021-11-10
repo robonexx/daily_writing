@@ -1,11 +1,21 @@
-@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Roboto:ital,wght@0,100;0,900;1,100;1,400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=WindSong:wght@400;500&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400;800&display=swap');
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter", sans-serif;
+}
+
+:root {
+  --color-primary: #f4f4f4;
+  --color-secondary: #e9e9e9;
+  --color-primary-dark: #282828;
+  --color-info: #a3a3a3;
+  --color-bg: #282828;
+  --color-bg-dark: #121212;
+  --color-bg-secondary: #f8f8f8;
+  --color-bg-shadow: #000;
+  --color-bg-lighter: rgb(34, 34, 34);
 }
 
 body {
