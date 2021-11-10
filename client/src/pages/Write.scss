@@ -1,0 +1,93 @@
+.writepage {
+  position: absolute;
+  top: 5vh;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  background: #e5e5dc;
+  color: #26495c;
+  padding: 5rem;
+
+  h1 {
+    text-align: center;
+    font-size: 2rem;
+  }
+}
+
+.writeWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.writeImg {
+  width: 800px;
+  height: 400px;
+  object-fit: cover;
+  padding: 0.5rem;
+  border-radius: 20px;
+}
+
+.Form {
+  position: relative;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.7));
+}
+
+::-webkit-input-placeholder {
+  color: #999;
+  font-weight: 600;
+  padding: 0.1rem 0.25rem;
+}
+
+.FormWrapper {
+  width: 100%;
+  background: #26495c;
+  display: flex;
+  align-items: center;
+}
+
+.writepage .icon {
+  margin: 0 0.25rem;
+  width: 32px;
+  height: 32px;
+  padding: 0.1rem;
+  color: #e5e5dc;
+  cursor: pointer;
+
+  @media (max-width: 768px) {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.writeTitle {
+  font-weight: 600;
+  width: 60%;
+  outline: none;
+  background: #e5e5dc;
+  color: #000;
+}
+
+.writeInput {
+  font-weight: 600;
+  margin: 0.25rem;
+  width: 100%;
+  min-height: 300px;
+  max-height: 100%;
+  outline: none;
+  background: #e5e5dc;
+  color: #000;
+}
+
+.writeBtn {
+  margin-top: 1rem;
+  outline: none;
+  border: none;
+  background: #26495c;
+  color: #e5e5dc;
+  padding: 4px 8px;
+  filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.7));
+}

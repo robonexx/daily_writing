@@ -1,0 +1,188 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  width: 100vw;
+  height: 5vh;
+  background: #e5e5dc;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #26495c;
+  z-index: 100;
+}
+
+.navL {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.navL {
+  flex: 2;
+}
+.navR {
+  flex: 3;
+  display: flex;
+  justify-content: center;
+}
+
+.navCL {
+  display: flex;
+  flex: 3;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.navCR {
+  flex: 4;
+  margin-top: 1rem;
+  font-size: 3rem;
+  font-weight: 500;
+  font-family: "WindSong", cursive;
+  color: #c66b3d;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+
+  @media (max-width: 1080px) {
+    font-size: 1.4rem;
+    line-height: 15px;
+    margin-top: 0.25rem;
+  }
+}
+
+.navbar .icon {
+  color: #26495c;
+  margin: 1rem 1.5rem;
+  padding: 0.1rem 0.1rem;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+
+  @media (max-width: 768px) {
+    width: 24px;
+    height: 24px;
+  }
+}
+.navbar .searchIcon {
+  color: #26495c;
+  margin: 1rem 1.5rem;
+  padding: 0.25rem 0.25rem;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+
+  @media (max-width: 768px) {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+.icon {
+  filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.4));
+}
+
+.navbar .profileImg {
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+
+  @media (max-width: 768px) {
+    width: 24px;
+    height: 24px;
+    margin-left: 0.2rem;
+  }
+}
+
+.profileImg {
+  filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.8));
+  cursor: pointer;
+}
+
+/* login sign up navbar top /or/  img */
+.navbar .listItems {
+  font-size: 0.8rem;
+  background: #c66b3d;
+  padding: 2px 4px;
+  border-radius: 2px;
+  filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.7));
+}
+
+.navbar ul {
+  
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+}
+
+
+
+.navbar ul li {
+
+  margin: 0 1rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  text-align: center;
+
+  /*  @media (max-width: 768px) {
+    font-size: 0.6rem;
+    margin-left: 0.2rem;
+  } */
+}
+
+.navbar ul li a {
+  
+  color: #26495c;
+  text-decoration: none;
+  padding: 0 0.25rem;
+  letter-spacing: 0.2rem;
+  font-weight: 600;
+  
+  position: relative;
+  cursor: pointer;
+}
+
+.navbar ul li a:before {
+  /* sätter in en border med pseudo element  */
+  content: "";
+  position: absolute;
+  top: 100%;
+  bottom: 0;
+  left: 100%;
+  right: 100%;
+  /* transition for hover state */
+  transition: all 0.3s ease-out;
+}
+
+.navbar ul li:nth-of-type(1) a:before {
+  background: #c66b3d;
+}
+.navbar ul li:nth-of-type(2) a:before {
+  background: #c66b3d;
+}
+.navbar ul li:nth-of-type(3) a:before {
+  background: #c66b3d;
+}
+.navbar ul li:nth-of-type(4) a:before {
+  background: #c66b3d;
+}
+
+.navbar ul li a:hover {
+  color: #c66b3d;
+  filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.356));
+  font-weight: 600;
+}
+
+.navbar ul li a:hover:before {
+  /* hover, ändrar så strecket går från mitten till höger och vänster */
+  bottom: -1px;
+  left: -6px;
+  right: -6px;
+}
+
+.navbar .icon:hover {
+  color: #c66b3d;
+}
+
+@media only screen and (max-width: 900) {
+  .navCR {
+    font-size: 1rem;
+  }
+}
