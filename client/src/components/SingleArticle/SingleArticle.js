@@ -49,7 +49,7 @@ const SingleArticle = () => {
         title,
         desc,
       });
-      window.location.reload('/');
+      setUpdate(false);
     } catch (err) {}
   };
 
@@ -68,7 +68,7 @@ const SingleArticle = () => {
               className='singleArticleTitleInput'
             />
           ) : (
-            <h1 className='singleArticleTitle'>{art.title}</h1>
+            <h1 className='singleArticleTitle'>{title}</h1>
           )}
 
           {art.username === user?.username && (
@@ -98,7 +98,7 @@ const SingleArticle = () => {
             onChange={(e) => setDesc(e.target.value)}
           />
         ) : (
-          <p className='singleArticleText'>{art.desc}</p>
+          <p className='singleArticleText'>{desc}</p>
         )}
         {update && (
           <button className='updateBtn' onClick={handleUpdate}>
