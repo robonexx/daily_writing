@@ -10,11 +10,12 @@ import { Link } from 'react-router-dom';
 const EditIcon = styled(EditAlt)``;
 const DeleteIcon = styled(Delete)``;
 
-
 const SingleArticle = () => {
   const [art, setArt] = useState({});
   const location = useLocation();
   const path = location.pathname.split('/')[2];
+
+  const PF = 'http://localhost:5000/images/';
 
   useEffect(() => {
     const getArticle = async () => {
@@ -27,7 +28,7 @@ const SingleArticle = () => {
     <div className='singleArticle'>
       <div className='Wrapper'>
         {art.photo && (
-          <img className='singleArticleImage' src={art.photo} alt='' />
+          <img className='singleArticleImage' src={PF + art.photo} alt='' />
         )}
 
         <div className='singleArticleTitleBox'>
