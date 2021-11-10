@@ -26,7 +26,13 @@ export default function Navbar() {
     <div className='navbar'>
       <div className='navL'>
         {user ? (
-          <img className='profileImg' src={user.profilePicture} alt='' />
+          <Link to='/settings'>
+            <img
+              className='profileImg'
+              src={user.profilePicture}
+              alt='user profile image'
+            />
+          </Link>
         ) : (
           <ul>
             <li className='listItems'>

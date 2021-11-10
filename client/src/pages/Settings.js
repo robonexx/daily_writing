@@ -1,58 +1,120 @@
-import './Settings.scss'
-import {Link} from 'react-router-dom'
-import profImg from '../assets/images/ruperto.jpg'
-import styled from 'styled-components'
-import {User} from '@styled-icons/evil/User'
+import './Settings.scss';
+import { Link } from 'react-router-dom';
+import profImg from '../assets/images/ruperto.jpg';
+import styled from 'styled-components';
+import { User } from '@styled-icons/evil/User';
+import { useContext, useState } from 'react';
+import { Context } from '../context/Context';
+import axios from 'axios';
 
-
-const PlusIcon = styled(User)`
-`
-
+const PlusIcon = styled(User)``;
 
 const Settings = () => {
-    return ( 
-        <div className="settings">
-            <div className="settingsWrapper" >
-                <div className="settingsTitle">
-                    <span className="settingsUpdate">Update</span>
-                    <span className="settingsDelete">Delete</span>
-                </div>
+  const [file, setFile] = useState(null);
+  const [username, setUserName] = useState('');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [success, setSuccess] = useState(false);
 
-                <form className="settingsForm">
-                    <label>Profile picture</label>
-                <div className="settingsProfilePic" >
-                    <img
-                className="settingsImg"
-                src={profImg}
-                alt=""
-                />
-                <label htmlFor="fileInput">
-                    <PlusIcon className="settingsProfilePicIcon" />
-                </label>
-                <input type="file" id="fileInput" style={{display: "none"}} />
-                </div>
+  const { user, dispatch } = useContext(Context);
+  const PF = 'http://localhost:5000/images/';
 
-                <div className="settingInputs" >
-                <label>Username:</label>
-                <input type="text" placeholder="Rupert"></input>
-                </div>
-                <div className="settingInputs" >
-                <label>Email:</label>
-                <input type="text" placeholder="mail@mail.mail"></input>
-                </div>
-                <div className="settingInputs" >
-                <label>Password:</label>
-                <input type="password" placeholder="**********"></input>
-                </div>
-                
-                <Link to="/">
-                        <button className="settingsBtn">Done</button>
-                </Link>
-                </form>
-                
-            </div>
+  const handleUpdate = async (e) => {
+    dispatch({ type: 'UPDATE_START' });
+    e.preventDefault();
+    const updatedUser = {
+      userId: user._id,
+      username,
+      email,
+      password,
+    };
+    if (file) {
+      const data = new FormData();
+      const filename = Date.now() + file.name;
+      data.append('name', filename);
+      data.append('file', file);
+      updatedUser.profilePicture = filename;
+      try {
+        await axios.post('/upload', data);
+      } catch (err) {
+        console.log(err);
+      }
+    }
+    try {
+      const res = await axios.put('/users/' + user._id, updatedUser);
+      setSuccess(true);
+      dispatch({ type: 'UPDATE_SUCCESS', payload: res.data });
+    } catch (err) {
+      dispatch({ type: 'UPDATE_FAILURE' });
+      console.log(err);
+    }
+  };
+  return (
+    <div className='settings'>
+      <div className='settingsWrapper'>
+        <div className='settingsTitle'>
+          <h1>Update Profile</h1>
+          <span className='settingsDelete'>Delete</span>
         </div>
-     );
-}
- 
+
+        <form className='settingsForm' onSubmit={handleUpdate}>
+          <label>Profile picture</label>
+          <div className='settingsProfilePic'>
+            <img
+              className='settingsImg'
+              src={file ? URL.createObjectURL(file) : PF + user.profilePicture}
+              alt=''
+            />
+            <label htmlFor='fileInput'>
+              <PlusIcon className='settingsProfilePicIcon' />
+            </label>
+            <input
+              type='file'
+              id='fileInput'
+              style={{ display: 'none' }}
+              onChange={(e) => setFile(e.target.files[0])}
+            />
+          </div>
+
+          <div className='settingInputs'>
+            <label>Username:</label>
+            <input
+              type='text'
+              placeholder={user.username}
+              onChange={(e) => setUserName(e.target.value)}
+            ></input>
+          </div>
+          <div className='settingInputs'>
+            <label>Email:</label>
+            <input
+              type='text'
+              placeholder={user.email}
+              onChange={(e) => setEmail(e.target.value)}
+            ></input>
+          </div>
+          <div className='settingInputs'>
+            <label>Password:</label>
+            <input
+              type='password'
+              placeholder='**********'
+              onChange={(e) => setPassword(e.target.value)}
+            ></input>
+          </div>
+
+          <button className='settingsBtn' type='submit'>
+            Update
+          </button>
+          {success && (
+            <span
+              style={{ color: 'green', textAlign: 'center', marginTop: '20px' }}
+            >
+              Profile has been updated...
+            </span>
+          )}
+        </form>
+      </div>
+    </div>
+  );
+};
+
 export default Settings;
