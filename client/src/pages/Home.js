@@ -9,13 +9,13 @@ import axios from 'axios';
 
 const Home = () => {
   const [articles, setArticles] = useState([]);
-  const {search} = useLocation()
+  const { search } = useLocation();
 
-console.log(articles)
+  console.log(articles);
   useEffect(() => {
     const fetchData = async () => {
       const res = await axios.get('/articles' + search);
-      setArticles(res.data)
+      setArticles(res.data);
     };
     fetchData();
   }, [search]);
@@ -25,11 +25,7 @@ console.log(articles)
       <Sidebar />
       <div className='homeSection'>
         <Header />
-        <Articles articles={articles}/>
-
-        {/* <Link className="link" path="/articles/life">
-            <ArticlesPage />
-            </Link> */}
+        <Articles articles={articles} />
       </div>
     </div>
   );

@@ -54,7 +54,6 @@ const Settings = () => {
       <div className='settingsWrapper'>
         <div className='settingsTitle'>
           <h1>Update Profile</h1>
-          <span className='settingsDelete'>Delete</span>
         </div>
 
         <form className='settingsForm' onSubmit={handleUpdate}>

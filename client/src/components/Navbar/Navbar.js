@@ -5,14 +5,12 @@ import styled from 'styled-components';
 import { Instagram } from '@styled-icons/boxicons-logos/Instagram';
 import { FacebookCircle } from '@styled-icons/boxicons-logos/FacebookCircle';
 import { Linkedin } from '@styled-icons/boxicons-logos/Linkedin';
-import { Search } from '@styled-icons/evil/Search';
-import UserImage from '../../assets/images/ruperto.jpg';
 import { Context } from '../../context/Context';
 
 const InstaIcon = styled(Instagram)``;
 const FbIcon = styled(FacebookCircle)``;
 const InIcon = styled(Linkedin)``;
-const SearchIcon = styled(Search)``;
+
 
 export default function Navbar() {
   /* Profile img i show if user sign in is true if not signed in will show two buttons for either login or sign up */
@@ -49,7 +47,6 @@ export default function Navbar() {
             </li>
           </ul>
         )}
-        <SearchIcon className='searchIcon' />
       </div>
 
       <div className='navCL'>

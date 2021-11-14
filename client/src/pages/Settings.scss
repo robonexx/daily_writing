@@ -21,6 +21,7 @@
 
 
 .settingsTitle {
+  margin-top: 5rem;
   padding: 2rem 5rem;
   display: flex;
   flex-direction: column;
@@ -28,19 +29,6 @@
   justify-content: center;
   
 }
-
-.settingsUpdate,
-.settingsDelete {
-  margin: 4rem 0.5rem;
-  outline: none;
-  border: none;
-  background: #26495c;
-  color: #e5e5dc;
-  padding: 4px 8px;
-  filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.7));
-  border-radius: 5px;
-}
-
 
 .settingsProfilePic {
   width: 100%;

@@ -7,12 +7,11 @@
 
   .title {
     margin: 0.25rem 1rem;
-
+    position: absolute;
+    left: 5%;
+    top: 5%;
     span {
-      position: absolute;
-      left: 20%;
-      transform: translateX(-50%);
-      font-size: 4rem;
+      font-size: 5rem;
       text-align: center;
       font-weight: 500;
       font-family: "Inter", sans-serif;

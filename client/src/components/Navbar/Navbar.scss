@@ -11,13 +11,14 @@
 }
 
 .navL {
+  margin-left: 2rem;
   display: flex;
-  justify-content: space-evenly;
+  justify-self: flex-start;
   align-items: center;
 }
 
 .navL {
-  flex: 2;
+  flex: 1;
   transition: all 0.3s ease;
 }
 .navR {
@@ -70,19 +71,6 @@
     height: 24px;
   }
 }
-.navbar .searchIcon {
-  color: var(--color-secondary);
-  margin: 1rem 1rem;
-  padding: 0.25rem 0.25rem;
-  width: 40px;
-  height: 40px;
-  cursor: pointer;
-
-  @media (max-width: 768px) {
-    width: 32px;
-    height: 32px;
-  }
-}
 
 .icon {
   filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.4));
@@ -94,6 +82,7 @@
 }
 
 .navbar .profileImg {
+  margin-top: 0.25rem;
   border-radius: 50%;
   width: 32px;
   height: 32px;
@@ -103,7 +92,6 @@
   @media (max-width: 768px) {
     width: 24px;
     height: 24px;
-    margin-left: 0.2rem;
   }
 }
 

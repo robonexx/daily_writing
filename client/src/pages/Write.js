@@ -2,7 +2,6 @@ import { useContext, useState } from 'react';
 import './Write.scss';
 import styled from 'styled-components';
 import { Plus } from '@styled-icons/boxicons-regular/Plus';
-import writeImg from '../assets/images/dancingwithkid.jpg';
 import axios from 'axios';
 import { Context } from '../context/Context';
 

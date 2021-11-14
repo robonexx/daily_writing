@@ -3,17 +3,16 @@
   display: flex;
   flex-direction: column;
   background-color: var(--color-bg);
-  width: 20rem;
+  width: 15rem;
   min-height: 100vh;
 }
 p {
+  margin-top: 2rem;
   color: #e5e5dc;
+  font-size: 1rem;
+  font-style: italic;
 }
 
-.sidebarContent {
-  height: fit-content;
-  margin: 0 0 2rem 4rem;
-}
 .sidebarTitle {
   font-size: 2rem;
   font-weight: 500;
@@ -23,31 +22,6 @@ p {
   text-align: center;
 }
 
-.sidebarList {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  cursor: pointer;
-
-  .link {
-    text-decoration: none;
-    color: #c66b3d;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
-  }
-  .link::first-letter {
-    text-transform: uppercase;
-  }
-}
-
-.sidebarItems {
-  list-style: none;
-  font-size: 1.6rem;
-  padding: 0.25rem;
-}
-
-.sidebarItems:hover {
-  color: #e5e5dc;
-}
 .sidebarAbout {
   margin-top: 4rem;
   height: fit-content;

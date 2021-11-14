@@ -3,7 +3,8 @@
 # My FIRST MERN STACK
 
 I been working on this project at the same time as a school assignment and my portfolio </br>
-Same idea as a blog, crud system. But i decided to call it daily writings, had articles on a news paper in mind
+Same idea as a blog, crud system. But i decided to call it daily writings, had articles on a news paper in mind.
+This project has a working, write, update, delete function. Also updating profile with image works. 
 
 </br>
 
@@ -32,6 +33,34 @@ Same idea as a blog, crud system. But i decided to call it daily writings, had a
 - Youtube
 - Traversy Media (React and MongoDb), Net Ninja(React) and Kevin Powell(Sass and css)
 - MDN
+
+</br>
+
+---  
+
+</br>
+
+##  __Preview__
+
+
+<img src="readme_images/DailyHome.png" alt="Project image" width="280"> &nbsp; &nbsp;
+<img src="readme_images/signup.png" alt="Project image" width="280"> &nbsp; &nbsp;
+<img src="readme_images/login.png" alt="Project image" width="280"> &nbsp; &nbsp;
+<img src="readme_images/settings.png" alt="Project image" width="280"> &nbsp; &nbsp;
+<img src="readme_images/updated.png" alt="Project image" width="280"> &nbsp; &nbsp;
+<img src="readme_images/write.png" alt="Project image" width="280"> &nbsp; &nbsp;
+<img src="readme_images/writing.png" alt="Project image" width="280"> &nbsp; &nbsp;
+<img src="readme_images/update_delete.png" alt="Project image" width="280"> &nbsp; &nbsp;
+<img src="readme_images/homewithnewarticle.png" alt="Project image" width="280"> &nbsp; &nbsp;
+<img src="readme_images/readarticle.png" alt="Project image" width="280"> &nbsp; &nbsp;
+
+
+</br>
+
+---
+</br>
+
+
 
 ## __My Socials__
 
