@@ -28,7 +28,7 @@ This project has a working, write, update, delete function. Also updating profil
 </br>
 
 ## Sources:
-- Documentation on the websites of react, mongoDb, react-router-dom
+- Documentation on the websites of each library/framework/tech that I used
 - UDEMY
 - Youtube
 - Traversy Media (React and MongoDb), Net Ninja(React) and Kevin Powell(Sass and css)
