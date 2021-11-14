@@ -1,5 +1,5 @@
 .article {
-  width: 40em;
+  width: 30em;
   margin: 0.25rem;
   display: flex;
   flex-direction: column;
@@ -11,8 +11,7 @@
 }
 
 .articleImg {
-  width: 360px;
-  height: 220px;
+  height: 10em;
   object-fit: cover;
   border-radius: 5px;
   cursor: pointer;

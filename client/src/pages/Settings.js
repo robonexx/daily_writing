@@ -20,7 +20,7 @@ const Settings = () => {
   const PF = 'http://localhost:5000/images/';
 
   const handleUpdate = async (e) => {
-    dispatch({ type: 'UPDATE_START' });
+    dispatch({ type: 'UPDATE' });
     e.preventDefault();
     const updatedUser = {
       userId: user._id,
@@ -62,7 +62,7 @@ const Settings = () => {
           <div className='settingsProfilePic'>
             <img
               className='settingsImg'
-              src={file ? URL.createObjectURL(file) : PF + user.profilePicture}
+              src={file ? URL.createObjectURL(file) : PF+user.profilePicture}
               alt=''
             />
             <label htmlFor='fileInput'>
@@ -106,7 +106,7 @@ const Settings = () => {
           </button>
           {success && (
             <span
-              style={{ color: 'green', textAlign: 'center', marginTop: '20px' }}
+              style={{ color: '#defade', textAlign: 'center', marginTop: '20px' }}
             >
               Profile has been updated...
             </span>

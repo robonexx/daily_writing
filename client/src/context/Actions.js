@@ -15,8 +15,8 @@ export const Logout = () => ({
   type: 'LOGOUT',
 });
 
-export const UpdateStart = (userCredentials) => ({
-  type: 'UPDATE_START',
+export const Update = (userCredentials) => ({
+  type: 'UPDATE',
 });
 
 export const UpdateSuccess = (user) => ({

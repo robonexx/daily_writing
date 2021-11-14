@@ -20,7 +20,7 @@ const Reducer = (state, action) => {
         isFetching: false,
         error: true,
       };
-    case 'UPDATE_START':
+    case 'UPDATE':
       return {
         ...state,
         isFetching: true,

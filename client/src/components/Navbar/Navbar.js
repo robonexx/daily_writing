@@ -18,6 +18,8 @@ export default function Navbar() {
   /* Profile img i show if user sign in is true if not signed in will show two buttons for either login or sign up */
   const { user, dispatch } = useContext(Context);
 
+  const PF = 'http://localhost:5000/images/';
+
   const handleLogout = () => {
     dispatch({ type: 'LOGOUT' });
   };
@@ -29,7 +31,7 @@ export default function Navbar() {
           <Link to='/settings'>
             <img
               className='profileImg'
-              src={user.profilePicture}
+              src={PF + user.profilePicture}
               alt='user profile image'
             />
           </Link>

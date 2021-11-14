@@ -108,4 +108,10 @@
   padding: 4px 8px;
   filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.7));
   border-radius: 2px;
+  cursor: pointer;
+  z-index: 10;
+}
+.settingsBtn:hover {
+  background: #39525f;
+  color: #bdecb7;
 }
