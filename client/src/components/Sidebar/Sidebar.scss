@@ -27,6 +27,12 @@ p {
   height: fit-content;
   text-align: center;
   align-items: center;
+
+  p {
+    font-size: 0.8rem;
+    font-weight: 100;
+    color: var(--color-primary);
+  }
 }
 
 .sidebarImg {
