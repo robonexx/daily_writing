@@ -2,9 +2,8 @@
 
 # My FIRST MERN STACK
 
-I been working on this project at the same time as a school assignment and my portfolio </br>
-Same idea as a blog, crud system. But i decided to call it daily writings, had articles on a news paper in mind.
-This project has a working, write, update, delete function. Also updating profile with image works. 
+So I worked on this project to learn more about the MERN stack, it was a bit challenging but fun. 
+Its maybe not a full functional project but sign in, log in, crud on "posts" works
 
 </br>
 
