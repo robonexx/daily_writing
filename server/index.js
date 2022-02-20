@@ -40,5 +40,5 @@ app.use('/server/articles', articleRoute);
 app.use('/server/categories', categoryRoute);
 
 app.listen('5000', () => {
-  console.log('backend is connected');
+  console.log('backend is connected, bitch aint working');
 });

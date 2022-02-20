@@ -75,7 +75,7 @@ const Write = () => {
             ></textarea>
           </div>
           <button className='writeBtn' type='submit'>
-            New Article
+            Add
           </button>
         </form>
       </div>
